@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 body {
@@ -83,7 +84,70 @@ section#capa-do-site {
     background-size: cover;
     box-shadow: inset 0 0 0 1000px #1a191dd3;
     text-align: center;
-    padding: 10em 0;
+    padding: 8em 0 25em;
+}
+div#todos-cubos {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cubo-lilas {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg);
+    animation: animate-cubo-lilas 20s linear infinite;
+    animation-direction: reverse;
+
+}
+@keyframes animate-cubo-lilas {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.top-cubo-lilas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--preto);
+    transform: rotateX(90deg) translateZ(75px);
+}
+.top-cubo-lilas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: var(--lilas);
+    transform: translateZ(-150px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(160, 0, 181, 0.2), 0 0 120px rgba(160, 0, 181, 0.4), 0 0 120px rgba(160, 0, 181, 0.6), 0 0 120px rgba(160, 0, 181, 0.8);
+}
+.cubo-lilas div {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cubo-lilas div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--preto), var(--lilas));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
 }
 .cubo-laranja {
     position: relative;
@@ -137,6 +201,12 @@ section#capa-do-site {
     transform: translateZ(-301px);
     filter: blur(20px);
     box-shadow: 0 0 120px rgb(202, 77, 20, 0.2), 0 0 120px rgb(202, 77, 20, 0.4), 0 0 120px rgb(202, 77, 20, 0.6), 0 0 120px rgb(202, 77, 20), 0.8;
+}
+div#titulo-capa {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 section#capa-do-site h1{
     position: relative;
