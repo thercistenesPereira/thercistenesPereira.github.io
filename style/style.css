@@ -1,45 +1,52 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@font-face {
-    font-family: 'code';
-    src: url('CascadiaMono.ttf') format(truetype);
-    font-style: normal;
-    font-weight: normal;
-}
 
 :root {
     --laranja: #f78b02;
     --lilas: #d400f2;
+    --preto: #111013;
 }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #1a191d;
     font-family: 'Source Code Pro', monospace;
 }
 /* HEADER 
-    <1. Refazer o processo de usar fontes baixadas para usar a do VScode>
-    <2. Maneira de alinhar a foto da logo com o pipe> 
-    <3. Animar o pipe para ele ficar piscando>
     <4. Animar a engrenagem da logo para ela ficar rodando>
     <6. A logo deve ser feita com código>*/
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 div.zona-logo {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     color: white;
 }
 div.zona-logo > p {
     font-weight: bolder;
     font-size: 1.7em;
+}
+#cursor {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        color: white;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
 }
 ul {
     list-style: none;
@@ -53,16 +60,95 @@ li a {
     font-weight: 500;
     font-size: 1.1em;
 }
-li a:hover {
-    color: var(--laranja);
-}
 div.if-menu{
     display: flex;
-    padding: 0px 20px; 
+    padding: 10px 20px; 
+    transition: all .3s ease-in-out;
+}
+div.if-menu:hover {
+    background-color: #111013;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #111013;
+    text-shadow: 0 0 15px #111013;
 }
 .if-lilas {
     color: var(--lilas);
 }
 .if-lilas:hover {
     color: var(--lilas);
+}
+section#capa-do-site {
+    background-image: url('../images/fundo-section.png');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px #1a191dd3;
+    text-align: center;
+    padding: 10em 0;
+}
+.cubo-laranja {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotate(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotate(360deg);
+    }
+}
+.cubo-laranja div {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cubo-laranja div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--preto), var(--laranja));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: var(--preto);
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: var(--laranja);
+    transform: translateZ(-301px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgb(202, 77, 20, 0.2), 0 0 120px rgb(202, 77, 20, 0.4), 0 0 120px rgb(202, 77, 20, 0.6), 0 0 120px rgb(202, 77, 20), 0.8;
+}
+section#capa-do-site h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
+}
+section#capa-do-site h1::first-letter {
+    font-size: 1.5em;
+}
+section#capa-do-site h2 {
+    text-transform: capitalize;
+    color: white;
 }
