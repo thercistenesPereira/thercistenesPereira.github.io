@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --laranja: #f78b02;
+    --lilas: #d400f2;
+    --preto: #111013;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1a191d;
+    font-family: 'Source Code Pro', monospace;
+}
+/* HEADER 
+    <4. Animar a engrenagem da logo para ela ficar rodando>
+    <6. A logo deve ser feita com código>*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+div.zona-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+div.zona-logo > p {
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+#cursor {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        color: white;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
+}
+ul {
+    list-style: none;
+    display: flex;    
+}
+li a {
+    font-family: 'code', 'Source Code Pro', monospace;
+    color: white;
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 1.1em;
+}
+div.if-menu{
+    display: flex;
+    padding: 10px 20px; 
+    transition: all .3s ease-in-out;
+}
+div.if-menu:hover {
+    background-color: #111013;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #111013;
+    text-shadow: 0 0 15px #111013;
+}
+.if-lilas {
+    color: var(--lilas);
+}
+.if-lilas:hover {
+    color: var(--lilas);
+}
+section#capa-do-site {
+    background-image: url('../images/fundo-section.png');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px #1a191dd3;
+    text-align: center;
+    padding: 8em 0 25em;
+}
+div#todos-cubos {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cubo-lilas {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg);
+    animation: animate-cubo-lilas 20s linear infinite;
+    animation-direction: reverse;
+
+}
+@keyframes animate-cubo-lilas {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.top-cubo-lilas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--preto);
+    transform: rotateX(90deg) translateZ(75px);
+}
+.top-cubo-lilas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: var(--lilas);
+    transform: translateZ(-150px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(160, 0, 181, 0.2), 0 0 120px rgba(160, 0, 181, 0.4), 0 0 120px rgba(160, 0, 181, 0.6), 0 0 120px rgba(160, 0, 181, 0.8);
+}
+.cubo-lilas div {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cubo-lilas div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--preto), var(--lilas));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+.cubo-laranja {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotate(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotate(360deg);
+    }
+}
+.cubo-laranja div {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cubo-laranja div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--preto), var(--laranja));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: var(--preto);
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: var(--laranja);
+    transform: translateZ(-301px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgb(202, 77, 20, 0.2), 0 0 120px rgb(202, 77, 20, 0.4), 0 0 120px rgb(202, 77, 20, 0.6), 0 0 120px rgb(202, 77, 20), 0.8;
+}
+div#titulo-capa {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section#capa-do-site h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
+}
+section#capa-do-site h1::first-letter {
+    font-size: 1.5em;
+}
+section#capa-do-site h2 {
+    text-transform: capitalize;
+    color: white;
+}
