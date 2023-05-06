@@ -1,0 +1,19 @@
+[PLANEJAMENTO VERSÃO DESKTOP]
+
+HEADER
+    <// A engrenagem da nova logo deve ser inspirada na engrangem de consiguração do DevToos>
+    <// Fazer novo SVG para a logo baseada na nuvem da Microdoft>
+    <// Animar a engrenagem da logo para ela ficar rodando>
+    <// Fazer uma ligação da pasta arquivo de svg para o arquivo HTML>
+    <// Excluir a imagem que está como fundo da capa do site>
+    <// Excluir font baixada e deixar somente a import do google fonts>
+    <// Colocar blur no nome da logo no evento hover>
+    <// Diminuir a tranparência no blur no evento hover do nome de capa>
+    <// Colocar blur para evento hover na logo>
+    <// Escurecer a cor laranja da logo no evento hover, deixando o branco sem evento>
+    <// Deixar o menu fixo na lateral após sumir o de cima, imitando a tela do ubuntu>
+    <\\ [OK] Testar text-shadow do H1 em preto para comparar o resultado>
+
+EXPERTISE
+    <// Tirar o pedding-top do h1 e redirecionar o tamanho para o pedding botton do header>
+    

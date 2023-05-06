@@ -1,0 +1,64 @@
+[PLANEJAMENTO DA ESTRUTURA]
+
+HEAD 
+    <1. Rever a tag head fazendo alguns ajustes e principalmente para rever a forma de colocar a descrição que fica abaixo do título no resultado da lista dos navegadores.
+
+BODY 
+    <// Estilização da barra de rolagem>
+    <// Estilização do cursor (ver diversos exemplos)>
+    <// Favicon animado assim como a logo>
+
+HEADER
+    BARRA SUPERIOR 
+        <// Fica acima do menu, mas não a ponto de vazar rumo à logo>
+        <// Servirá para configurações de som ou por exemplo outras configurações>
+        <// QR Code para o próprio site, assim o avaliador pode ver a responsividade imediatamente>
+    LOGO 
+        <// O desenho da logo e o nome deve estar de forma separada, pra facilitar as versões responsivas>
+    
+SECTION-EXPERTISE 
+    <// Subtítulo: FRONT END # BACK END # APP DEVELOPER. Exemplo Animação: https://www.youtube.com/watch?v=PP0Os0UvMCs 
+    DIV 1
+        FRONT END
+            <1. JavaScript>
+            <2. HTML>
+            <3. CSS>
+            <4. React>
+            <5. Sass>
+    DIV 2
+        BACK END
+            <1. JavaScript>
+            <2. Python>   
+            <3. Node JS>
+    DIV 3
+        APP DEVELOPER
+            <1. ReactNative>
+    
+    *** Possibilidade de comparar o estilo em div com um globo feito de nomes ou itens svg https://jacekjeznach.com/***
+    <//Foto de código com texto colorido e com fundo tranparente usando background-image com efeito paralax - a foto deve está pegando duas sections e somente a metade de cada uma.
+    <// As DIVs serão animadas estilo cartas loop, frente com as referências profissionais e verso com animação letras matrix>
+    <// Testar somente os ícones em cada div ou o nome somente ou o nome mais os ícones>
+
+SECTION-PROJETOS 
+    <1. Site sobre a Anta (inspirado no projeto 'stomatopoda')>
+    <2. Jogo da Velha em js impossível de ganhar no CodePen>
+    <3. FlipBird em python code pen>
+
+SECTION CONTATO 
+    <// Formulário de contato com cadastro de email>
+    <// Proposta de ícones de rede social https://www.youtube.com/watch?v=C8wSNZqktOM >
+FOOTER
+    <// Animação de coisas caindo aqui>
+    DIV X 
+        <1. Contatdor de visitas>
+
+
+**********************************
+[IDEIAS ALEATÓRIAS]
+    <// Colocar efeitos sonoros no site, como opção de habilitá-los e desabilitá-los. Por exemplo sons de clicks, raspagem em mouseenter etc.>
+    <// Colocar modo ligth e dark, com dark como padrão. o botão deve ficar na barra superior ao menu.>
+    <// Animação/efeito ao passar o mouse nos h1 e no texto da logo. ANimação tipo água https://jacekjeznach.com/>
+    <// Exemplo de página de Blog https://jacekjeznach.com/>
+    <// Ver se pode usar a Lib JS Three.js
+
+
