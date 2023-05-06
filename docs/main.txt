@@ -4,9 +4,7 @@ HEAD
     <1. Rever a tag head fazendo alguns ajustes e principalmente para rever a forma de colocar a descrição que fica abaixo do título no resultado da lista dos navegadores.
 
 BODY 
-    <// Estilização da barra de rolagem>
-    <// Estilização do cursor (ver diversos exemplos)>
-    <// Favicon animado assim como a logo>
+    
 
 HEADER
     BARRA SUPERIOR 
