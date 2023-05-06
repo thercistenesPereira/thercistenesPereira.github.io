@@ -1,0 +1,6 @@
+[PLANEJAMENTO VERSÃO TELAS GRANDES]
+
+BODY 
+    <1. Travar o body para no máximo 1200px>
+    <2. Rever o conceito acima no CusoEmVideo>
+    <3. Na parte da tela sem interação dos lados colocar animação blube que combine e não atrapalhe a experiência>
