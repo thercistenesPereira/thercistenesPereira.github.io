@@ -36,13 +36,15 @@ header img {
     width: 150px;
     height: 81px;
 }
-header p:hover {
-    text-shadow: 0 0 10px white;
-}
 div.zona-logo > p {
     font-weight: bolder;
     font-size: 1.7em;
+    transition: all .5s ease-in-out;
 }
+div.zona-logo > p:hover {
+    text-shadow: 0 0 10px white;
+}
+
 #cursor {
     animation: pulse 1s infinite;
 }
@@ -216,7 +218,7 @@ section#capa-do-site h1::first-letter {
     font-size: 1.5em;
 }
 section#capa-do-site h2 {
-    text-transform: capitalize;
+    text-align: center;
 }
 section#expertise {
     text-align: center;
