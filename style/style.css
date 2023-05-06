@@ -7,6 +7,7 @@
     --laranja: #f78b02;
     --lilas: #d400f2;
     --preto: #111013;
+    --background: #1a191d;
 }
 * {
     margin: 0;
@@ -17,7 +18,7 @@
     color: white;
 }
 body {
-    background-color: #1a191d;    
+    background-color: var(--background);    
 }
 header {
     display: flex;
@@ -31,9 +32,12 @@ div.zona-logo {
     align-items: center;
     cursor: pointer;
 }
-img {
+header img {
     width: 150px;
     height: 81px;
+}
+header p:hover {
+    text-shadow: 0 0 10px white;
 }
 div.zona-logo > p {
     font-weight: bolder;
@@ -205,7 +209,7 @@ div#titulo-capa {
 section#capa-do-site h1{
     position: relative;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 7rem;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
 }
 section#capa-do-site h1::first-letter {
@@ -231,4 +235,15 @@ section#expertise h1 {
     to {
         border-right-color: transparent;
     }
+}
+::-webkit-scrollbar {
+    background-color: var(--background);
+    width: .6rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #686868;
 }
