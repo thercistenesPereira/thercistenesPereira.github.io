@@ -1,0 +1,21 @@
+svg {
+    border: 1px solid orange;
+}
+.circle {
+    stroke: white;
+    stroke-width: 2;
+}
+.circle1 {
+    fill: orangered;
+    fill-opacity: 0.3;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+.circle2 {
+    fill: purple;
+    fill-opacity: .6;
+}
+.circle3 {
+    fill: greenyellow;
+    fill-opacity: .4;
+}

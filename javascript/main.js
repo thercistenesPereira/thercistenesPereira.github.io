@@ -10,5 +10,4 @@ function typeWrite(element) {
         }, 75 * index)
     });
 }
-
 typeWrite(subtituloCapa)
