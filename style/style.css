@@ -20,30 +20,8 @@ body {
     background-color: var(--background);    
 }
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0px;
-}
-div.zona-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-header img {
-    width: 150px;
-    height: 81px;
-}
-div.zona-logo > p {
-    font-weight: bolder;
-    font-size: 1.7em;
-    transition: all .5s ease-in-out;
-}
-div.zona-logo > p:hover {
-    text-shadow: 0 0 10px white;
-}
 
+}
 #cursor {
     animation: pulse 1s infinite;
 }
@@ -60,7 +38,7 @@ div.zona-logo > p:hover {
 }
 ul {
     list-style: none;
-    display: flex;    
+    display: flex;   
 }
 li a {
     font-family: 'code', 'Source Code Pro', monospace;
