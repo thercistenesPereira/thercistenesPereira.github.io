@@ -20,8 +20,12 @@ body {
     background-color: var(--background);    
 }
 header {
-
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 470px;
 }
+
 #cursor {
     animation: pulse 1s infinite;
 }
@@ -38,7 +42,8 @@ header {
 }
 ul {
     list-style: none;
-    display: flex;   
+    display: flex;
+    padding-top: 28px;
 }
 li a {
     font-family: 'code', 'Source Code Pro', monospace;
