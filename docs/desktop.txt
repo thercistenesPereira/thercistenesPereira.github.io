@@ -19,7 +19,8 @@ HEADER
     <// Escurecer a cor laranja da logo no evento hover, deixando o branco sem evento>
     <// Deixar o menu fixo na lateral após sumir o de cima, imitando a tela do ubuntu>
     <\\ [OK] Testar text-shadow do H1 em preto para comparar o resultado>
-
+SIDEBAR-MENU 
+    <// Animação de desenho traçado nos ícones (home, expertise, sobre, etc)>
 
 EXPERTISE
     <// Tirar o pedding-top do h1 e redirecionar o tamanho para o pedding botton do header>
